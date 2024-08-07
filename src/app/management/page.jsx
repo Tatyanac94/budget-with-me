@@ -26,8 +26,25 @@ export default function ManagementPage() {
       }
     });
 
-    return () => unsubscribe(); 
+  //   return () => unsubscribe(); 
+  // }, []);
+
+
+
+
+
+
+    // Check if unsubscribe is a function before returning
+    return () => {
+      if (typeof unsubscribe === 'function') {
+        unsubscribe();
+      }
+    };
   }, []);
+
+
+
+
 
   useEffect(() => {
     async function fetchData() {

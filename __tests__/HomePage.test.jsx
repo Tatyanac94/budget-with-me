@@ -1,9 +1,7 @@
 import React from 'react';
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import HomePage from '@/app/page';
 import '@testing-library/jest-dom';
-import { registerUser, login } from '../src/utils/useAuth';
-import { useRouter } from 'next/navigation';
 
 
 // Mock the `useRouter` hook from Next.js

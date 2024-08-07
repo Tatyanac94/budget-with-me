@@ -63,7 +63,7 @@ const HomePage = () => {
 
   return (
     <div className="home-container bg-gray-800 text-white p-4">
-      <header>
+      <header className="text-center">
         <h1 className="text-3xl font-bold">Welcome to Budget With Me</h1>
         <p>Track your expenses to manage your budget effectively.</p>
       </header>
@@ -97,6 +97,7 @@ const HomePage = () => {
             required
             className="border border-gray-700 rounded-lg p-2 block mb-4 w-full text-black"
           />
+          <div className="flex justify-center">
           <button
             type="submit"
             className={`bg-gray-700 text-white rounded-lg px-4 py-2 block ${loading ? "bg-gray-600 cursor-not-allowed" : "hover:bg-gray-600"}`}
@@ -104,6 +105,7 @@ const HomePage = () => {
           >
             {loading ? "Signing Up..." : "Sign Up"}
           </button>
+          </div>
         </form>
         {showSuccessMessage && (
           <p className="text-green-400">You have successfully signed up!</p>
@@ -137,6 +139,7 @@ const HomePage = () => {
             required
             className="border border-gray-700 rounded-lg p-2 block mb-4 w-full text-black"
           />
+          <div className="flex justify-center">
           <button
             type="submit"
             className={`bg-gray-700 text-white rounded-lg px-4 py-2 block ${loading ? "bg-gray-600 cursor-not-allowed" : "hover:bg-gray-600"}`}
@@ -144,6 +147,7 @@ const HomePage = () => {
           >
             {loading ? "Signing In..." : "Sign In"}
           </button>
+          </div>
         </form>
         {error && (
           <p className="text-red-400">{error}</p>
@@ -152,7 +156,7 @@ const HomePage = () => {
 
       <br className="my-8" />
 
-      <section className="benefits-section">
+      <section className="benefits-section text-center">
         <h2 className="text-xl font-bold">Why Use an Expense Tracker?</h2>
         <ul className="list-disc list-inside mt-4">
           <li>Monitor spending habits</li>

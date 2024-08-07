@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Budget with Me
 
-## Getting Started
+## Capstone Project 3
 
-First, run the development server:
+## Author: Tatyana Cuttino
+
+## Description
+
+An expense tracker to keep track of your expenses on-the-go! You can calculate your daily, weekly, or monthly expenses.
+
+This is a Next.js application named Budget with Me. It includes a simple home page and management page to list and calculate your expenses all in one place, styled using Tailwind CSS.
+
+## How to Run
+
+1. Clone the repository: [https://github.com/Tatyanac94/budget-with-me.git](https://github.com/Tatyanac94/budget-with-me.git)
+
+2. Navigate to the project directory: `cd [project-directory]`
+
+3. Install dependencies: `npm install`
+
+4. Run the development server: `npm run dev`
+
+5. Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to see the app in action.
+
+## Deployment
+
+This application is deployed on Vercel. You can view the live site at:  [Budget With Me](https://budget-with-me.vercel.app/)
+
+- Technologies Used
+
+- Next.js
+
+- React
+
+- Tailwind CSS
+
+- Google CLoud Firebase
+
+## Running Tests
+
+To run the unit tests, use the following command:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+npm run test
